@@ -1,0 +1,200 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');*/
+/*Também dá pra copiar por link: <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime&family=Open+Sans&display=swap');
+* {
+    margin: 0%;
+    /* Se refere a margem branco que estava entre o header e o topo da tela*/
+    padding: 0%;
+    /* Padding se refere ao espaçamento interno(entre o conteúdo e suas bordas*/
+    box-sizing: border-box;
+}
+/*Seletor acima(*), permite modificar todas as tags*/
+.topo {
+    background-color: #F9003D;
+    width: 100%;
+    height: 60px;
+}
+.menunav {
+    width: 1200px;
+    height: 60px;
+    /* background-color: grey; */
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+/*Cima-esquerda-baixo-direita*/
+/*Seletor pra todas os que possuem a classe(classe-link)*/
+/*Pra estilização se usa classes*/
+.menu {
+    width: 600px;
+    height: 60px;
+    /* background-color: green; */
+    list-style-type: none;/*Remover estilo automático da lista*/
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    padding: 14px 30px;
+}
+.menu a:hover {
+    background-color: rgb(170, 57, 223);
+    text-decoration: underline;
+}
+.banner {
+    width: 100%;
+    height: 740px;
+    background-image: url("../img/imagem-fundo-banner.jpg");
+    background-repeat: cover;
+    background-position: center;
+}
+/*../ Volta na pasta anterior */
+.content {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+.alinhando-abaixo {
+    display: flex;
+    align-items: flex-end;
+}
+.banner-text {
+    width: 525px;
+    height: 550px;
+}
+.banner-text h1 {
+    font-size: 90px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    border-bottom: solid 2px #FFAF00;
+    padding-bottom: 20px;
+}
+.banner-text p {
+    font-size: 50px;
+    font-family: 'Courier Prime', monospace;
+    text-transform: uppercase;
+    color: #F9003D;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.banner-text span {
+    margin-left: 15px;
+}
+.sobre {
+    width: 100%;
+    height: 800px;
+    background-color: #080324;
+}
+.sobre h2 {
+    font-size: 64px;
+    font-family: 'Bebas Neue', cursive;
+    color: #F9003D;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.artigo-sobre {
+    display: flex;
+    justify-content: space-between;
+}
+.artigo-sobre img {
+    width: 500px;
+}
+.artigo-texto-sobre {
+    color: white;
+    width: 600px;
+}
+/*:nth-child()Se refere ao "filho" como tinha 2 h3 ele selecionou o 2º*/
+.artigo-texto-sobre h3:nth-child(1) {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.artigo-texto-sobre h3:nth-child(2) {
+    color: #FFAF00;
+    font-family: 'Bebas Neue', 'cursive';
+    font-size: 64px;
+}
+.artigo-texto-sobre p{
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 18px;
+    line-height: 28px;
+}
+/* Informações */
+.info {
+    width: 100%;
+    height: 200px;
+    background-image: url('../img/imagem-fundo-info.jpg');
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+}
+.info h4 {
+    color: #ffffff;
+    font-size: 24px;
+}
+.info p {
+    width: 250px;
+    color: #A259f7;
+    font-size: 28px;
+    border: solid 1px #A259f7;
+    text-align: center;
+    padding: 1em 0;
+    text-transform: uppercase;
+}
+/* comando (dashed) faz borda pontilhada */
+.info-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.endereço {
+    width: 100%;
+    height: 500px;
+    background-image: url('../img/imagem-fundo-ranking.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.endereço h2 {
+    font-size: 64px;
+    font-family: 'Bebas Neue', 'cursive';
+    color: #FFAF00;
+}
+.end-text {
+    width: 800px;
+    height: 210px;
+    background-color: #010010;
+    border: solid 2px #340B45;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.end-text p {
+    font-family: 'Courier Prime', monospace;
+    font-size: 24px;
+    color: #A259F7;
+    margin-left: 20px;
+}
+.alinhamento-centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end-text img{
+    position: absolute;
+    top: -60px;
+    right: 0;
+}
+.rodape {
+    width: 100%;
+    height: 80px;
+    background-color: #F9003D;
+    color: #ffffff;
+    font-family: 'Open Sans', 'sans serif';
+    font-size: 18px;
+}

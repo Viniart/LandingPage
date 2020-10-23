@@ -6,17 +6,21 @@
         <meta name='author' content='Vinicio Santos'>
         <meta name='description' content='Essa é a landing page de teste para o Curso de Desenvolvimento de Sistemas do SENAI de Informática'>
         <title>Landing Page</title>
+        <script src="https://kit.fontawesome.com/f46cdbe330.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header class='topo'>
             <nav class='menunav'>
-                <ul class='menu'>
+                <ul class='menu' id='meusLinks'>
                     <!-- li*4(cria 4 li pra você) -->
                     <li><a href='#'>Início</a></li>
                     <li><a href='#'>Sobre</a></li>
                     <li><a href='#'>Desafios</a></li>
                     <li><a href='#'>Endereço</a></li>
                 </ul>
+                <a href="#" class='iconmenu' onclick="botaoDoMenu()">
+                    <i class="fas fa-bars fa-2x"></i>
+                </a>
             </nav>
         </header>
         <!-- Fim do Header -->
@@ -82,6 +86,15 @@
                 <p> Copyright © 2020 - Escola SENAI de Informática</p>
             </div>
         </footer>
-
+        <script>
+            function botaoDoMenu() {
+                var ulDoMenu = document.getElementById("meusLinks");
+                if (ulDoMenu.style.display === "flex") {
+                  ulDoMenu.style.display = "none";
+                  } else {
+                   ulDoMenu.style.display = "flex";
+                  }
+                }
+        </script>
     </body>
 </html>

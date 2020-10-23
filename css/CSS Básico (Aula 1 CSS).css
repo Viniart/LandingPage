@@ -22,6 +22,7 @@
     margin: 0 auto 0 auto;
     display: flex;
     justify-content: flex-end;
+    flex-direction: row;
 }
 /*Cima-esquerda-baixo-direita*/
 /*Seletor pra todas os que possuem a classe(classe-link)*/
@@ -36,6 +37,12 @@
     justify-content: space-between;
     align-items: center;
 }
+.fas {
+    width: 150px;
+    height: 60px;
+    padding-top: 15px;
+    text-align: center;
+}
 .menu a {
     color: white;
     text-decoration: none;
@@ -44,9 +51,12 @@
     font-size: 25px;
     padding: 14px 30px;
 }
-.menu a:hover {
+.menunav a:hover {
     background-color: rgb(170, 57, 223);
     text-decoration: underline;
+}
+.iconmenu {
+    display: none;
 }
 .banner {
     width: 100%;
@@ -204,6 +214,7 @@
     font-size: 18px;
 }
 
+
 @media screen and (max-width: 1199px){
     .sobre {
         height: auto;
@@ -255,4 +266,30 @@
         position: unset;
         margin-top: 2em;
     }
+}
+
+@media screen and (max-width: 767px) {
+    .menunav {
+        width: 100%;
+    }
+    .menu {
+        width: 100%;
+        height: 350px;
+        background-color: #000;
+        position: absolute;
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .menu a:hover {
+        background-color: unset;
+    }
+    .iconmenu {
+        display: block;
+    }
+}
+/* Responsivo do 375 até 575px */
+@media screen and (max-width: 575px) {
+    
 }

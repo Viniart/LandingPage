@@ -291,5 +291,60 @@
 }
 /* Responsivo do 375 até 575px */
 @media screen and (max-width: 575px) {
-    
+    .fas {
+        width: 100px;
+    }
+    .banner-text h1 {
+        font-size: 60px;
+        text-align: center;
+    }
+    .banner-text p {
+        font-size: 40px;
+        text-align: center;
+    }
+    .sobre h2 {
+        font-size: 45px;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .artigo-sobre img {
+        min-width: 350px;
+    }
+    .artigo-texto-sobre h3:nth-child(1) {
+        font-size: 26px;
+        text-transform: uppercase;
+    }
+    .artigo-texto-sobre h3:nth-child(2) {
+        font-size: 48px;
+    }
+    .artigo-texto-sobre p{
+        font-family: 'Open Sans', 'sans-serif';
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .info {
+        height: 400px;
+    }
+    .info-flex {
+        flex-direction: column;
+    }
+    .titulo-endereço {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .endereço h2 {
+        font-size: 45px;
+        text-align: center;
+    }
+    .end-text {
+        max-width: 560px;
+        width: 100%;
+    }
+    .end-text p {
+        font-size: 20px;
+    }
+    .rodape {
+        font-size: 15px;
+    }
 }
